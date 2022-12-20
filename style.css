@@ -5,10 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
-    position: relative;
-}
-
 a {
     text-decoration: none;
     color: #25c5aa;
@@ -19,11 +15,10 @@ body {
 }
 
 header {
-    height: 80px;
+    margin-top: 30px;
     width: 100%;
-    padding: 0 168px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,7 +47,7 @@ header .buttons {
     margin: 16px 0 32px;
 }
 
-.header-text h1>a {
+.header-text h1 {
     font-weight: 800;
     font-size: 52px;
     line-height: 62px;
@@ -205,23 +200,29 @@ hr {
 
 .nazvanie {
     display: flex;
-    justify-content: space-between;
-    margin: 0 168px;
     align-items: center;
-}
-
-.nazvanie2 {
-    width: 600px;
+    flex-direction: column;
     color: #9BA9B4;
     font-size: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.nazvanie span {
+    margin-right: 10px;
+}
+
+.nazvanie p {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 5px 0;
+    line-height: 27px;
 }
 
 span {
     color: green;
-}
-
-.nazvanie2 .p1 {
-    color: #5D5DFF;
 }
 
 .p34 {
@@ -231,22 +232,6 @@ span {
 
 .name {
     margin: 9px 0;
-}
-
-.p1112 {
-    line-height: 27px;
-}
-
-.p1113 {
-    line-height: 27px;
-}
-
-.p1114 {
-    line-height: 27px;
-}
-
-.p1115 {
-    line-height: 27px;
 }
 
 .kartinka {
@@ -297,7 +282,7 @@ span {
     font-weight: 400;
 }
 
-#s1 {
+footer {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
@@ -313,11 +298,6 @@ span {
     /* Цвет текста */
     width: 100%;
     /* Ширина слоя */
-}
-
-#s1 footer {
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .koroche {
@@ -387,7 +367,7 @@ button {
     flex-shrink: 0;
 }
 
-#slaid1:checked~adaptivny-slayder-lasekun abusteku-deagulus {
+#slaid1:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
     transform: translate(0);
 }
 
@@ -399,28 +379,20 @@ button {
     transform: translateX(-200%);
 }
 
-#s1>footer>ul>li {
+footer>ul>li {
     list-style-type: none;
 }
 
-#s1>footer>ul>.s2 {
+footer>ul>.s2 {
     font-size: 10px;
 }
 
-#s1>footer>ul>.s3 {
+footer>ul>.s3 {
     font-size: 20px;
 }
 
-.nazvanie2>p {
-    font-size: 25px;
-    font-weight: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .twogis {
-    margin: 0 168px;
+    margin: 25px 168px;
     border: none;
     border-radius: 5px;
     display: flex;
