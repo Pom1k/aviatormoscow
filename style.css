@@ -168,7 +168,6 @@ header .buttons {
 }
 
 .main .icon p {
-    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -283,20 +282,11 @@ span {
 
 footer {
     display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    /* Фиксированное положение */
-    left: 0;
-    bottom: 0;
-    /* Левый нижний угол */
+    flex-wrap: wrap;
     padding: 10px;
-    /* Поля вокруг текста */
     background: #8D8DFF;
-    /* Цвет фона */
     color: #fff;
-    /* Цвет текста */
     width: 100%;
-    /* Ширина слоя */
 }
 
 .koroche {
@@ -309,8 +299,9 @@ button {
 
 .adaptivny-slayder {
     position: relative;
-    max-width: 680px;
+    max-width: 600px;
     margin: 50px auto;
+    border-radius: 15px;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
@@ -382,10 +373,6 @@ footer>ul>li {
     list-style-type: none;
 }
 
-footer>ul>.s2 {
-    font-size: 10px;
-}
-
 footer>ul>.s3 {
     font-size: 20px;
 }
@@ -396,4 +383,13 @@ footer>ul>.s3 {
     border-radius: 5px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    .main-text h1 {
+        font-size: 32px;
+    }
+    .twogis {
+        margin: 25px;
+    }
 }
